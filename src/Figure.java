@@ -10,11 +10,9 @@ import java.io.IOException;
  */
 
 public class Figure extends JButton {
-
     /** coordinates of the X and Y positions */
     private int posX;
     private int posY;
-
     private final int solutionPosX;     /** coordinate of the position X */
     private final int solutionPosY;     /** coordinate of the position Y */
     private final int dimension;
