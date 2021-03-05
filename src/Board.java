@@ -11,7 +11,7 @@ import java.util.Random;
 public class Board extends JPanel {
     public static Cell[][] board;
     private ArrayList<Cell> completeBoard = new ArrayList<>();
-    public final int dimension;
+    private final int dimension;
     private final int figureWidth, figureHeight;
     private static final Color BORDER_COLOR = new Color(193, 11, 243, 245);
 
@@ -26,6 +26,7 @@ public class Board extends JPanel {
         this.setBorder(BorderFactory.createLineBorder(BORDER_COLOR, 5));
         this.setBackground(Color.lightGray);
         this.dimension = dimension;
+
         board = new Cell[dimension][dimension];
         int x = 0;
         int y = 0;

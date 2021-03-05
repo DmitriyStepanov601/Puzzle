@@ -20,7 +20,7 @@ public class Puzzle extends JFrame {
     private static Board board = null;
     private static Timer chronometer;
     private static Container container;
-    public static Image windowIcon;
+    private static Image windowIcon;
     private static final Font bFont = new Font("Verdana", Font.BOLD, 24);
     private static final Color FOREGROUND_COLOR = new Color(11, 31, 243, 245);
 
@@ -52,7 +52,6 @@ public class Puzzle extends JFrame {
         chronometer = new Timer(delay, new TimerListener());
 
         createMenu();
-
         puzzleArea = new JPanel();
         puzzleArea.setOpaque(true);
         puzzleArea.setBackground(Color.gray);
@@ -96,7 +95,7 @@ public class Puzzle extends JFrame {
     /**
      * The function to create menu
      */
-    public void createMenu(){
+    private void createMenu() {
         JMenuBar gameMenu = new JMenuBar();
         JMenu game = new JMenu("Game");
         gameMenu.add(game);
@@ -154,7 +153,7 @@ public class Puzzle extends JFrame {
      * @param pathImage passes the path along which the images are located
      * @return an image of the BufferedImage type
      */
-    public static BufferedImage loadImage(String pathImage){
+    public static BufferedImage loadImage(String pathImage) {
         try {
             return ImageIO.read(Puzzle.class.getResource(pathImage));
         } catch (IOException e) {
@@ -224,7 +223,7 @@ public class Puzzle extends JFrame {
         container.validate();
     }
 
-    public static void add(){
+    public static void add() {
         moveCount ++;
         moves.setText(" " + moveCount + " ");
     }
