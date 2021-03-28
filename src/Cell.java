@@ -1,11 +1,11 @@
 /**
- * Cell class with properties <b>x</b>, <b>y</b> и <b>figure</b>.
+ * Cell class 
  * @author Dmitriy Stepanov
  */
 
 public class Cell {
-    private final int x, y;     /** the coordinates of the cell */
-    private Figure figure;      /** a fragment of the cell */
+    private final int x, y;     
+    private Figure figure;      
 
     /**
      * Constructor - creating a new cell with specific values
@@ -32,7 +32,6 @@ public class Cell {
         figure = null;
     }
 
-    // getters and setters for fields
     public Figure getFigure(){
         return figure;
     }
