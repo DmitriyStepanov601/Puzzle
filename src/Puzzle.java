@@ -92,9 +92,6 @@ public class Puzzle extends JFrame {
         setVisible(true);
     }
 
-    /**
-     * The function to create menu
-     */
     private void createMenu() {
         JMenuBar gameMenu = new JMenuBar();
         JMenu game = new JMenu("Game");
@@ -193,9 +190,6 @@ public class Puzzle extends JFrame {
         }
     }
 
-    /**
-     * Handler with time spent calculation
-     */
     class TimerListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
@@ -224,11 +218,10 @@ public class Puzzle extends JFrame {
     }
 
     public static void add() {
-        moveCount ++;
+        moveCount++;
         moves.setText(" " + moveCount + " ");
     }
 
-    // getters for getting fields
     public static Board getBoard() {
         return board;
     }
