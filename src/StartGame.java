@@ -94,9 +94,6 @@ public class StartGame extends JFrame {
         setVisible(true);
     }
 
-    /**
-     * The option to start a game
-     */
     private void startGame(){
         int level;
         if (!easy.isSelected()) {
