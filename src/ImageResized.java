@@ -14,7 +14,7 @@ public class ImageResized {
      * @param height the height image
      * @return modified image of the BufferedImage type
      */
-    public  static BufferedImage resizeImage(BufferedImage image, int width, int height) {
+    public static BufferedImage resizeImage(BufferedImage image, int width, int height) {
         int type;
         type = image.getType() == 0? BufferedImage.TYPE_INT_ARGB : image.getType();
         BufferedImage resizedImage = new BufferedImage(width, height, type);
