@@ -5,16 +5,15 @@ import java.awt.event.*;
 import java.io.IOException;
 
 /**
- * The fragment class with the properties <b>solutionPosX</b> и <b>solutionPosY</b>.
+ * The fragment class 
  * @author Dmitriy Stepanov
  */
 
 public class Figure extends JButton {
-    /** coordinates of the X and Y positions */
     private int posX;
     private int posY;
-    private final int solutionPosX;     /** coordinate of the position X */
-    private final int solutionPosY;     /** coordinate of the position Y */
+    private final int solutionPosX;     
+    private final int solutionPosY;     
     private final int dimension;
 
     /**
@@ -49,7 +48,6 @@ public class Figure extends JButton {
         });
     }
 
-    // getters and setters for fields
     public int getPosX() {
         return posX;
     }
@@ -68,9 +66,6 @@ public class Figure extends JButton {
         return solutionPosY;
     }
 
-    /**
-     * Move image fragments
-     */
     private void Move() {
         Cell[][] board = Board.board;
         try {
@@ -130,9 +125,6 @@ public class Figure extends JButton {
         }
     }
 
-    /**
-     * Check to get the whole picture and win the game
-     */
     private void CheckAnswer() {
         Figure figure;
         for(int i = 0; i < dimension; i++) {
